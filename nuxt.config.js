@@ -59,8 +59,8 @@ export default {
   modules: ['@nuxtjs/pwa', 'nuxt-basic-auth-module'],
 
   basic: {
-    name: 'AUTH USER NAME HERE',
-    pass: 'AUTH PASSWORD HERE',
+    name: 'pilar',
+    pass: 'pilar',
     enabled: true
     // enabled: process.env.BASIC_ENABLED === 'true' // require boolean value(nullable)
   },
