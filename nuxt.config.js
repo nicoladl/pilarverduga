@@ -3,7 +3,7 @@ import pkg from './package'
 // only add `router.base = '/<repository-name>/'` if `DEPLOY_ENV` is `GH_PAGES`
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
   router: {
-    base: '/giovannipante/'
+    base: '/pilarverduga/'
   }
 } : {}
 
@@ -22,11 +22,11 @@ export default {
       { property: 'og:title', content: pkg.title },
       { property: 'og:description', content: pkg.description },
       { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: `http://giovannipante.com` },
+      // { property: 'og:url', content: `http://giovannipante.com` },
       { property: 'og:image', content: `/images/share.jpg` },
       { property: 'twitter:card', content: `summary_large_image` },
-      { property: 'twitter:site', content: `@pantegiovanni` },
-      { property: 'twitter:creator', content: `@pantegiovanni` },
+      { property: 'twitter:site', content: `@pilush` },
+      { property: 'twitter:creator', content: `@pilush` },
       { name: 'theme-color', content: '#000000' }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }, { rel: 'stylesheet', href: 'MyFontsWebfontsKit.css' }]
