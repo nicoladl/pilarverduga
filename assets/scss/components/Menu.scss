@@ -1,0 +1,24 @@
+.menu {
+  text-transform: uppercase;
+  position: fixed;
+  left: $border;
+  bottom: 0;
+  bottom: -3.5vw * 3;
+  // transform: translateY(50%);
+
+  &__item {
+    font-size: 3.8vw;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+
+    span {
+      opacity: 0;
+    }
+
+    &.target {
+      opacity: 1;
+      color: $red !important;
+      transition: all 0.5s ease-out;
+    }
+  }
+}

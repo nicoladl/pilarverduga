@@ -1,0 +1,25 @@
+.list {
+  li {
+    padding-bottom: 0.25rem;
+
+    @include mq($from: desktop) {
+      padding-bottom: 1rem;
+    }
+
+    &:last-child {
+      padding: 0;
+    }
+  }
+
+  &--small {
+    width: 75%;
+
+    @include mq($until: desktop) {
+      width: 100%;
+    }
+  }
+
+  .project {
+    padding-bottom: 7vh;
+  }
+}

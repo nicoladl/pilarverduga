@@ -1,0 +1,7 @@
+.social {
+  a {
+    @include mq($from: desktop) {
+      display: inline-block;
+    }
+  }
+}

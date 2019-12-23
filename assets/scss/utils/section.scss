@@ -1,0 +1,26 @@
+.section {
+  padding: 50px 0;
+
+  @include mq($from: desktop) {
+    padding: 100px 0;
+  }
+
+  &__plain {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include mq($from: desktop) {
+      min-height: calc(100vh - #{$border}*2);
+    }
+
+    @include mq($until: desktop) {
+      padding-top: 10vh;
+    }
+  }
+
+  &--nobottom {
+    padding-bottom: 0;
+  }
+}

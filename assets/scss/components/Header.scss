@@ -1,0 +1,51 @@
+header {
+  position: fixed;
+  top: $border;
+  width: calc(100vw - #{$border} * 2);
+  display: flex;
+  justify-content: space-between;
+  z-index: 999;
+
+  @include mq($until: desktop) {
+    top: calc(#{$border} / 2);
+    width: calc(100vw - #{$border});
+  }
+
+  h2 {
+    font-size: 3.8vw;
+    display: flex;
+
+    span {
+      opacity: 0;
+    }
+
+    @include mq($until: desktop) {
+      font-size: 13vw;
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  .date-time {
+    font-family: HelveticaNowDisplay-Md, Arial;
+    font-weight: 500;
+    text-align: right;
+
+    div {
+      font-size: 1.7vw;
+
+      span {
+        text-align: center;
+        display: inline-block;
+      }
+
+      .single {
+        min-width: 10px;
+      }
+
+      .double {
+        min-width: 32px;
+      }
+    }
+  }
+}

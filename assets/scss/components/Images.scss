@@ -1,0 +1,21 @@
+.image {
+  position: fixed;
+  top: 50%;
+  left: 15%;
+  height: 70%;
+  opacity: 0;
+  transform: scaleX(1.1) translateX(-2vw) translateY(-50%);
+  transform-origin: right center;
+  transition: all 0.25s ease-in-out;
+  
+  &.show {
+    opacity: 1;
+    transform: scaleX(1) translateX(0) translateY(-50%);
+    transform-origin: right center;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  &.upper {
+    z-index: 999;
+  }
+}

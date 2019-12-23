@@ -1,0 +1,90 @@
+.title {
+  width: 100%;
+  font-size: 14vw;
+  line-height: 1.26em; // avoid accent problem
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+
+  &--light {
+    font-family: HelveticaNowDisplay-Th, Arial;
+  }
+
+  &--bottom {
+    padding-bottom: 10vh;
+
+    @include mq($until: desktop) {
+      padding-bottom: 3vh;
+    }
+  }
+
+  &--bottom-mobile {
+    padding-bottom: 10vh;
+
+    @include mq($until: desktop) {
+      padding-bottom: 3vh;
+    }
+  }
+}
+
+.text {
+  font-size: 4vw;
+  line-height: 2rem;
+
+  @include mq($until: desktop) {
+    font-size: 0.5rem;
+    line-height: 0.75rem;
+  }
+
+  &--right {
+    text-align: right;
+  }
+
+  &--light {
+    font-family: HelveticaNowDisplay-Th, Arial;
+  }
+
+  &--small {
+    font-size: 0.3rem;
+    line-height: 1em;
+  }
+
+  &--side {
+    font-size: 0.4rem;
+  }
+
+  &.grey {
+    color: $grey;
+  }
+}
+
+.footer {
+  font-size: 0.3rem;
+  text-align: right;
+}
+
+.outline {
+
+  @include mq($from: desktop) {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.75px rgba(0, 0, 0, 0.6);
+
+    &.hover {
+      &:hover {
+        -webkit-text-fill-color: $black;
+        transition: all 0.5s ease-in-out;
+      }
+    }
+  }
+}
+
+.special {
+  .item {
+    line-height: 1rem;
+
+    @include mq($until: desktop) {
+      line-height: 0.8rem;
+    }
+  }
+}
