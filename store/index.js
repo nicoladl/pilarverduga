@@ -1,5 +1,6 @@
 export const state = () => ({
-  bio: 'bla bla bla bla bla bla bla bla bla bla bla bla',
+  bio:
+    "I am a multi-skilled professional, with strong digital marketing experience and knowledge. I am deeply interested in the disruptive technologies that are changing our habits, lifestyle and traditional paradigms. In my career, I love to translate these inputs into new opportunities for brands that want their business to evolve by embracing the digital transformation. Right now I'm working as a Project Manager on SEO projects for medium-high clients in an agency in Chiasso.",
   menu: [
     {
       label: '<span>A</span>b<span></span><span>o</span><span>u</span>t m<span>e</span>',
