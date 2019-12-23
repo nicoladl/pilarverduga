@@ -60,7 +60,7 @@ export default {
   basic: {
     name: 'pilarverduga',
     pass: 'p1l4rv3rdug4',
-    enabled: process.env.BASIC_ENABLED === 'true' // require boolean value(nullable)
+    enabled: process.env.DEPLOY_ENV === 'GH_PAGES' // require boolean value(nullable)
   },
 
   /*
