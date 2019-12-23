@@ -60,7 +60,8 @@ export default {
 
   basic: {
     name: 'AUTH USER NAME HERE',
-    pass: 'AUTH PASSWORD HERE'
+    pass: 'AUTH PASSWORD HERE',
+    enabled: true
     // enabled: process.env.BASIC_ENABLED === 'true' // require boolean value(nullable)
   },
 
