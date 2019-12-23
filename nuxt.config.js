@@ -1,11 +1,14 @@
 import pkg from './package'
 
 // only add `router.base = '/<repository-name>/'` if `DEPLOY_ENV` is `GH_PAGES`
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-  router: {
-    base: '/pilarverduga/'
-  }
-} : {}
+const routerBase =
+  process.env.DEPLOY_ENV === 'GH_PAGES'
+    ? {
+        router: {
+          base: '/pilarverduga/'
+        }
+      }
+    : {}
 
 export default {
   mode: 'spa',
@@ -29,7 +32,10 @@ export default {
       { property: 'twitter:creator', content: `@pilush` },
       { name: 'theme-color', content: '#000000' }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }, { rel: 'stylesheet', href: 'MyFontsWebfontsKit.css' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'MyFontsWebfontsKit.css' }
+    ]
   },
 
   /*
@@ -46,15 +52,16 @@ export default {
    ** Plugins to load before mounting the App
    */
   plugins: ['~/plugins/scroll.js', '~/plugins/reveal.js', '~/plugins/lines.js', { src: '~plugins/ga.js', ssr: false }],
-  /*
-   ** Global CSS
-   */
-  css: ['@/assets/scss/main.scss'],
 
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/pwa'],
+  modules: ['@nuxtjs/pwa', 'nuxt-basic-auth-module'],
+  basic: {
+    name: 'pilarverduga',
+    pass: 'p1l4rv3rdug4',
+    enabled: process.env.BASIC_ENABLED === 'true' // require boolean value(nullable)
+  },
 
   /*
    ** Build configuration
