@@ -2,10 +2,10 @@
   <section class="section section__plain">
     <h1 class="title title--bottom-mobile">
       <span class="title__row reveal">
-        <span class="item">Giovanni</span>
+        <span class="item">Pilar</span>
       </span>
       <span class="title__row reveal">
-        <span class="item">Panté/019</span>
+        <span class="item">Verduga</span>
       </span>
       <span class="title__row reveal">
         <span class="item">Portfolio</span>
@@ -19,7 +19,7 @@
           class="js-image js-upper outline"
           :data-src="'./images/giovannipante.jpg'"
           :data-alt="'Giovanni'"
-        >Giovanni Panté</span> and I am a Graphic designer.
+        >Pilar Verduga</span> and I am a Digital Marketing Manager.
       </p>
     </div>
   </section>

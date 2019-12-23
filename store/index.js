@@ -1,6 +1,5 @@
 export const state = () => ({
-  bio:
-    'bla bla bla bla bla bla bla bla bla bla bla bla',
+  bio: 'bla bla bla bla bla bla bla bla bla bla bla bla',
   menu: [
     {
       label: '<span>A</span>b<span></span><span>o</span><span>u</span>t m<span>e</span>',

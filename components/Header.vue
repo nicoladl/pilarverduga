@@ -1,9 +1,6 @@
 <template>
   <header>
-    <h2>
-      P
-      <span>A</span>NT
-    </h2>
+    <h2>Pilar Verduga</h2>
 
     <div class="date-time nomobile">
       <div class="date"></div>
