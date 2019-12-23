@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Pilar Verduga"
+AuthUserFile https://nicoladl.github.io/pilarverduga/.htpasswd
+Require valid-user
