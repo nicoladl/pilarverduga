@@ -56,12 +56,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/pwa', 'nuxt-basic-auth-module'],
-  basic: {
-    name: 'pilarverduga',
-    pass: 'p1l4rv3rdug4',
-    enabled: process.env.DEPLOY_ENV === 'GH_PAGES' // require boolean value(nullable)
-  },
+  modules: ['@nuxtjs/pwa'],
 
   /*
    ** Build configuration
