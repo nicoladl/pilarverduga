@@ -30,7 +30,8 @@ export default {
       { property: 'twitter:card', content: `summary_large_image` },
       { property: 'twitter:site', content: `@pilush` },
       { property: 'twitter:creator', content: `@pilush` },
-      { name: 'theme-color', content: '#000000' }
+      { name: 'theme-color', content: '#000000' },
+      { hid: 'robots', name: 'robots', content: 'noindex,nofollow' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
